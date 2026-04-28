@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bit11 | ZIP Authoring for macOS</title>
+    <meta
+      name="description"
+      content="bit11 is a Finder-like ZIP authoring app for macOS with advanced filename encoding compatibility for modern systems and legacy Japanese Windows."
+    />
+    <meta property="og:title" content="bit11 | ZIP Authoring for macOS" />
+    <meta
+      property="og:description"
+      content="Build ZIP archives visually on macOS with metadata encoding presets, legacy Japanese Windows compatibility, and a calm export workflow."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/bit11-icon.png" />
+    <link rel="icon" type="image/png" href="./assets/bit11-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="#overview" aria-label="bit11">
+          <img src="./assets/bit11-icon.png" alt="bit11 icon" />
+          <span>bit11</span>
+        </a>
+        <div class="nav-right">
+          <nav class="nav-links" aria-label="Primary">
+            <a href="#overview" data-i18n="nav.overview">Overview</a>
+            <a href="#features" data-i18n="nav.features">Features</a>
+            <a href="#download" data-i18n="nav.download">Download</a>
+          </nav>
+          <div class="locale-toggle" role="group" aria-label="Language selector">
+            <button class="locale-button is-active" type="button" data-locale="en">EN</button>
+            <button class="locale-button" type="button" data-locale="ja">JA</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-band hero-dark" id="overview">
+        <div class="hero shell">
+          <div class="section-copy hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">The Professional Compressor</p>
+            <h1 data-i18n="hero.title">Build ZIP archives like you organize files in Finder.</h1>
+            <p class="intro" data-i18n="hero.body">
+              bit11 is a focused ZIP authoring utility for macOS. Design the archive structure visually,
+              choose the right metadata preset, and export with confidence for modern systems or legacy Japanese Windows.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/SigFoundry/bit11/releases" download data-i18n="hero.download">Download DMG</a>
+              <a class="button button-secondary" href="#features" data-i18n="hero.github">Learn more</a>
+            </div>
+            <p class="micro-copy" data-i18n="hero.note">
+              Requires macOS. Place the signed installer at docs/downloads/bit11.dmg for GitHub Pages delivery.
+            </p>
+          </div>
+          <div class="hero-media">
+            <img class="hero-product" src="./assets/hero-product.png" alt="bit11 main window preview" />
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-band feature-strip" aria-label="Product stats">
+        <div class="feature-strip-inner shell">
+          <div>
+            <p class="stat-label" data-i18n="stats.encoding.label">Metadata compatibility</p>
+            <p class="stat-value" data-i18n="stats.encoding.value">UTF-8 / CP932</p>
+          </div>
+          <div>
+            <p class="stat-label" data-i18n="stats.workflow.label">Editing model</p>
+            <p class="stat-value" data-i18n="stats.workflow.value">Finder-like</p>
+          </div>
+          <div>
+            <p class="stat-label" data-i18n="stats.export.label">Export flow</p>
+            <p class="stat-value" data-i18n="stats.export.value">Progress-aware</p>
+          </div>
+          <div>
+            <p class="stat-label" data-i18n="stats.platform.label">Target platforms</p>
+            <p class="stat-value" data-i18n="stats.platform.value">macOS to legacy Windows</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-band showcase-light">
+        <div class="showcase shell">
+          <div class="showcase-copy">
+            <p class="eyebrow" data-i18n="showcase.eyebrow">Built for archive work that has consequences</p>
+            <h2 data-i18n="showcase.title">A calm utility, not a disposable compression dialog.</h2>
+            <p data-i18n="showcase.body">
+              When filename compatibility matters, a generic ZIP dialog is rarely enough. bit11 gives you a visual editing surface,
+              saved archive structures, and deliberate export controls without turning the app into a noisy file manager.
+            </p>
+            <ul class="feature-list">
+              <li data-i18n="showcase.point1">Finder-like two-pane editing with always-visible archive structure</li>
+              <li data-i18n="showcase.point2">ZIP Preset guidance for macOS, Windows 10/11, and legacy Japanese Windows</li>
+              <li data-i18n="showcase.point3">Structure save/load so recurring exports stay fast and repeatable</li>
+            </ul>
+          </div>
+          <div class="showcase-media">
+            <img src="./assets/workflow-window.png" alt="bit11 workflow window" />
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-band grid-section-dark" id="features">
+        <div class="grid-section shell">
+          <div class="section-copy section-copy-center narrow">
+            <p class="eyebrow" data-i18n="features.eyebrow">Why bit11</p>
+            <h2 data-i18n="features.title">Compatibility first. Control where it matters.</h2>
+            <p data-i18n="features.body">
+              bit11 is built for people who need ZIP files to survive real distribution targets, not just compress locally on one machine.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="info-card">
+              <h3 data-i18n="cards.c1.title">Finder-like archive editing</h3>
+              <p data-i18n="cards.c1.body">
+                Build the folder tree first, drag files into place, rename safely, and reorganize structure before you export the final archive.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3 data-i18n="cards.c2.title">Encoding presets that reflect reality</h3>
+              <p data-i18n="cards.c2.body">
+                Switch between modern UTF-8 output and legacy Japanese Windows compatible modes with Unicode Path extra field behavior where appropriate.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3 data-i18n="cards.c3.title">Safer export for larger jobs</h3>
+              <p data-i18n="cards.c3.body">
+                Choose the destination first, then generate in the background with visible progress so larger exports feel deliberate rather than frozen.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3 data-i18n="cards.c4.title">Reusable structures and passwords</h3>
+              <p data-i18n="cards.c4.body">
+                Save archive structure JSON, reuse registered passwords, and keep recurring delivery workflows consistent across projects.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-band download-section-light" id="download">
+        <div class="download-section shell">
+          <div class="section-copy section-copy-center narrow">
+            <p class="eyebrow" data-i18n="download.eyebrow">Download</p>
+            <h2 data-i18n="download.title">A DMG is ready, so you can install bit11 and start using it right away.</h2>
+            <p data-i18n="download.body">
+              Download the DMG, drag bit11 into Applications, and move straight into your secure notes workflow on macOS.
+            </p>
+            <div class="hero-actions download-actions">
+              <a class="button button-primary" href="https://github.com/SigFoundry/bit11/releases" download data-i18n="download.primary">Download bit11.dmg</a>
+              <a class="button button-secondary" href="https://github.com/SigFoundry/bit11" data-i18n="download.secondary">Read the source</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>bit11</p>
+        <p>MIT License</p>
+        <a href="https://github.com/SigFoundry/bit11">SigFoundry/bit11</a>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
